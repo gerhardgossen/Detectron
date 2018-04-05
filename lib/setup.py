@@ -19,7 +19,7 @@ from __future__ import print_function
 
 from Cython.Build import cythonize
 from setuptools import Extension
-from setuptools import findpackages
+from setuptools import find_packages
 from setuptools import setup
 
 import numpy as np
