@@ -19,6 +19,7 @@ from __future__ import print_function
 
 from Cython.Build import cythonize
 from setuptools import Extension
+from setuptools import findpackages
 from setuptools import setup
 
 import numpy as np
@@ -56,5 +57,6 @@ ext_modules = [
 
 setup(
     name='Detectron',
-    ext_modules=cythonize(ext_modules)
+    ext_modules=cythonize(ext_modules),
+    packages=find_packages()
 )
